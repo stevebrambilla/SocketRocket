@@ -433,6 +433,11 @@ static __strong NSData *CRLFCRLF;
     if (queue) {
         sr_dispatch_retain(queue);
     }
+    else {
+        // A delegate queue is required, so default to the main queue.
+        queue = dispatch_get_main_queue();
+        sr_dispatch_retain(queue);
+    }
     
     if (_delegateDispatchQueue) {
         sr_dispatch_release(_delegateDispatchQueue);
