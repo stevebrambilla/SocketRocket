@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.homepage           = 'https://github.com/square/SocketRocket'
   s.authors            = 'Square'
   s.license            = 'Apache License, Version 2.0'
-  s.source             = { :git => 'https://github.com/square/SocketRocket.git', :commit => '82c9f8938f8b9b7aa578866cb7ce56bc11e52ced' }
+  s.source             = { :git => 'https://github.com/stevebrambilla/SocketRocket.git', :commit => 'a247f813695bcdbb6f99203ab9346fabcdd0aebb' }
   s.source_files       = 'SocketRocket/*.{h,m,c}'
   s.requires_arc       = true
   s.ios.frameworks     = %w{CFNetwork Security}
